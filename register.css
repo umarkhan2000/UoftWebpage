@@ -1,0 +1,148 @@
+body {
+	background-color: #C7CED4;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.header {
+	background-color: #8AB9F1;
+	height: 40px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+
+.avatar {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: relative;
+	left: 120px; 
+	bottom: 40px;
+}
+
+.options {
+	position: relative;
+	left: 110px;
+	bottom: 90px;
+	margin-bottom: 5px;
+
+	border-radius: 4px;
+	font-family: sans-serif;
+	outline: #B4B6B8;
+	background: #E5F0FC; 
+}
+
+select{
+	padding: 5px;
+}
+
+.register-box a{
+	font-size: 10px;
+	position: relative;
+	top: -30px;
+	bottom: 15px;
+	left: 200px;
+	text-decoration: none;
+	color: #6F7071 ;
+}
+
+.register-box a:hover{
+	text-decoration: underline;
+}
+h1 {
+	position: relative;
+	bottom: 30px;
+	left: 90px;
+	font-size: 24px;
+}
+
+.register-box {
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 150px;
+	width: 320px;
+	height: 900px;
+	background: #F5F9FE;
+	border-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: 7px 7px grey;
+
+}
+
+.register-box input[type="Password"] {
+	border: none;
+	border-bottom: 1px solid #C3C3C3;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	font-size: 14px;
+	color: #393A3B;
+	position: relative;
+	left: 30px;
+	top: -10px;
+}
+
+.register-box input[type="Text"] {
+	border: none;
+	border-bottom: 1px solid #C3C3C3;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	font-size: 14px;
+	color: #393A3B;
+	position: relative;
+	left: 30px;
+	top: -10px;
+}
+
+.register-box p {
+	position: relative;
+	left: 20px;
+	top: 10px;
+	margin: 0;
+	padding-bottom: 5px;
+	font-weight: bold;
+	font-size: 17px;
+	
+}
+
+.register-box input{
+	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	left: 20px;
+}
+
+
+.register-box input[type="submit"] {
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	height: 30px;
+	background-color: #083F82;
+	color: white;
+	font-size: 16px;
+	position: relative;
+	left: 30px;
+}
+
+.register-box input[type="submit"]:hover {
+	cursor: pointer;
+	background: #4E99F3;
+
+}
+
+.footer {
+	text-align: right;
+	padding-right: 5px;
+	font-size: 11px;
+	position: relative;
+	clear: both;
+
+}
+
+.footer p{
+
+	text-align: bottom;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/register.css') }}">
+</head>
+<body>
+
+	<div class="register-box">
+		<img src="{{ url_for('static', filename='images/uoft_login.png' ) }}" class="avatar">
+		<h1>Sign Up Here</h1>
+
+		<form nethod="POST" action="">
+		
+	
+			<p>UtorId</p>
+			<input type="Text" name="utorid" placeholder="Enter Utorid" value="{{ request.form.utorid }}">
+			<p>First Name</p>
+			<input type="Text" name="firstname" placeholder="Enter your Firstname" value="{{ request.form.firstname }}">
+			<p>Last Name</p>
+			<input type="Text" name="lastname" placeholder="Enter your Lastname" value="{{ request.form.lastname }}">
+			<p>Email</p>
+			<input type="Text" name="email" placeholder="Enter your Email" value="{{ request.form.email }}">
+			<p>Password</p>
+			<input type="Password" name="password" placeholder="Enter Password" value="{{ request.form.password }}">
+			<p>Confirm Password</p>
+			<input type="Password" name="confirm_password" placeholder="Re-Enter Password" value="{{ request.form.confirm_password }}">
+
+			<input type="submit" name="submit" value="Sign Up" class="login-btn"><br>
+
+			<SELECT class="options" name="user_role">
+				<OPTION class="std" name="student" value ="student">Student</OPTION>
+				<OPTION class="ins" name="instructor" value ="instructor">Instructor</OPTION>
+			</SELECT><br>
+
+			<a href="{{ url_for('login') }}">Already have an Account?</a>
+
+		</form>
+
+	</div>
+	<div class="footer">
+		<p>&copy Site Designed by Umar Khan and Omar Patel</p>
+	</div>
+</body>
+</html>

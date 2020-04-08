@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to CSCB20</title>
+	<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" type="text/css" href="footer.css" />
+</head>
+<body style="background-color:#C7CED4">
+
+	<div class="container">
+		<div class="header">
+			<h2 class="logo"> CSCB20: Winter 2020 </h2>
+			<input type="checkbox" id="chk">
+			<label for="chk" class="show-menu-btn">
+				<i class="fas fa-bars"><img id="menu-icon"src="images/menu.png" width: 45px height=25px></i>
+			</label>
+
+			<ul class="menu">
+					<a href="index.html">Home</a>
+					<a href="news.html">Announcements</a>
+					<a href="syllabus.html">Lecture Material</a>
+					<a href="">Assignments</a> 
+					<a href="">Tests</a>
+					<a href="https://piazza.com" target="blank">Piazza</a>  
+					<a href="">Labs</a>  
+					<a href="">Resources</a>
+					<label for="chk" class="hide-menu-btn">
+						<i class="fas fa-times"><img src="images/times.png" width: 45px height=25px></i>
+					</label>
+			</ul>
+		</div>
+
+		<div class="welcome">
+			<h3>Introduction to Databases and Web Design</h3>
+			<hr class="hr1">
+			<p>A practical introduction to databases and Web app development. Databases: terminology and applications; creating, querying and updating databases; the entity-relationship model for database design. Web documents and applications: static and interactive documents; Web servers and dynamic server-generated content; Web application development and interface with databases. Click <a href ="content/syllabus.pdf" target="blank">here</a> for the syllabus.</p>
+
+			
+		</div>
+		<hr class="hr-seperator">
+
+		<div class="info">
+			<h3>Overview of the Course</h3>
+			<hr>
+			<br>
+			<b>Instructor: </b><a class= "anna" href="https://www.utsc.utoronto.ca/cms/anna-bretscher">Dr. Anna Bretscher</a> <br>
+			<b>Email: </b> <a class= "anna-email" href="mailto:bretscher@utsc.utoronto.ca">bretscher@utsc.utoronto.ca</a> <br>
+			<b>Office: </b> IC493 <br>
+			<b>Phone: </b> (416) 208-4745 <br>
+			<b>Lectures: </b> Mondays 9:00-11:00am in SY110 <br>
+			<b>Office Hours: </b> Wednesday 11:00-12:00<br>
+		</div>
+
+		<hr class="hr-seperator">
+
+		<div class="course-team">
+			<h3>Course Team</h3>
+			<hr>
+			<br>
+			<div class="person-bar">
+				<div class="role"></div>
+				<div class="name">Name</div>
+				<div class="email">Email</div>
+			</div>
+			<div class="person-bar">
+				<div class="role">Instructor</div>
+				<div class="name">Anna Bretscher</div>
+				<div class="email">bretscher@utsc.utoronto.ca</div>
+			</div>
+			<div class="person-bar">
+				<div class="role">Teaching Assistant</div>
+				<div class="name">Vidya Ananda</div>
+				<div class="email">john.doe@utsc.utoronto.ca</div>
+			</div>
+			<div class="person-bar">
+				<div class="role">Teaching Assistant</div>
+				<div class="name">Brian Lam</div>
+				<div class="email">jane.doe@utsc.utoronto.ca</div>
+			</div>
+			<div class="person-bar">
+				<div class="role">Teaching Assistant</div>
+				<div class="name">Dharmik Shah</div>
+				<div class="email">john.doe@utsc.utoronto.ca</div>
+			</div>
+			<div class="person-bar">
+				<div class="role">Teaching Assistant</div>
+				<div class="name">Frederic Pun</div>
+				<div class="email">jane.doe@utsc.utoronto.ca</div>
+			</div>
+			<div class="person-bar">
+				<div class="role">Teaching Assistant</div>
+				<div class="name">	Kevin Zhang</div>
+				<div class="email">john.doe@utsc.utoronto.ca</div>
+			</div>
+			<div class="person-bar">
+				<div class="role">Teaching Assistant</div>
+				<div class="name">Sakina Shabbir</div>
+				<div class="email">jane.doe@utsc.utoronto.ca</div>
+			</div>			
+			
+		</div>
+		<div class="footer">
+            <div class="footer-content">
+                <div class="footer-contentimage">
+                    <img src="images/uoft.png" class="footerimage" />
+                </div>
+                <div class="footer-contentfeedback">
+                    <h2>Anonymous Feedback</h2>
+                    <br>
+                    <form method="post">
+                        <textarea name="message" class="textbox" placeholder="Your Feedback..." rows="4" required></textarea>
+                        <br>
+                        <input type="submit" class="submit" value="SUBMIT">
+                         </input>
+                    <form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a class="specialInfo" href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science" target="_blank"> Faculty of Computer Science at UofT </a>| &copy;Designed by Omar Patel & Umar Khan
+            </div>
+        </div>
+	</div>
+</body>
+</html> 

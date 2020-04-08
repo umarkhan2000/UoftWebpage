@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+
+.header {
+	height: 80px;
+	background-color: #1F5C8F;
+	padding: 0px 15px;
+	color: #fff;
+}
+
+.logo {
+	line-height: 80px;
+	float: left;
+
+}
+
+.menu{
+	float: right;
+	line-height: 80px;
+}
+
+.menu a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0px 6px;
+	transition: 0.4s;
+}
+
+.show-menu-btn,.hide-menu-btn{
+	transition: 0.4s;
+	font-size: 30px;
+	cursor: : pointer;
+	display: none;
+}
+.show-menu-btn {
+	float: right;
+}
+
+.show-menu-btn i{
+	line-height: 80px;
+}
+.menu a:hover,.show-menu-btn:hover,
+.hide-menu-btn:hover{
+	color: #2CB6D2;
+}
+
+#chk{
+	position: absolute;
+	visibility: hidden;
+	z-index: -1111;
+}
+
+@media screen and (max-width: 1000px) {
+	.show-menu-btn,.hide-menu-btn{
+		display: block;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #333;
+		right: -100%;
+		top: 0;
+		text-align: center;
+		padding: 80px 0;
+		line-height: normal;
+		transition: 0.7s;
+	}
+	.menu a{
+		display: block;
+		padding: 20px;
+	}
+
+	.hide-menu-btn {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+	}
+
+	#chk:checked ~ .menu{
+		right: 0;
+	}
+}
+
+
+
+
+.content {
+	animation: fadeIn 0.4s;
+	width: 80%;
+	margin: 30px auto;
+	padding: 40px;
+	border-radius: 4px;
+	box-shadow: 10px 10px 5px grey;
+	background-color: #F6ECDD;
+	max-width: 1000px;
+}
+
+.subsection {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #7b91ae;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+}
+.info{
+  font-size: 14px;
+}
+.subheading {
+  padding: 10px;
+  border-bottom: 3px dotted #7b91ae;
+}
+.subboxheading {
+	font-size: 30px;
+  padding: 10px;
+  border-bottom: 3px solid #7b91ae;
+}
+.subtitle {
+  margin-top: 10px;
+  padding: 7px;
+  border-bottom: 1px solid #7b91ae;
+}
+.specialInfo {
+  font-weight: 650;
+  margin-left: 0px;
+}
+#footer {
+	float: bottom;
+	clear: both;
+}
+.subsection:hover {
+    background-color: #FBE9D1;
+		box-shadow: 5px 5px 5px grey;
+}

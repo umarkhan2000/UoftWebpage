@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSCB20</title>
+	<link rel="stylesheet" type="text/css" href="resources.css" />
+    <link rel="stylesheet" type="text/css" href="footer.css" />
+
+</head>
+<body style="background-color:#C7CED4">
+  <div class="container">
+    <div class="header">
+      <h2 class="logo"> CSCB20: Winter 2020 </h2>
+      <input type="checkbox" id="chk">
+      <label for="chk" class="show-menu-btn">
+        <i class="fas fa-bars"><img id="menu-icon"src="src/images/menu.png" width: 45px height=25px></i>
+      </label>
+
+      <ul class="menu">
+          <a href="index.html">Home</a>
+          <a href="news.html">Announcements</a>
+          <a href="syllabus.html">Lecture Material</a>
+          <a href="assignments.html">Assignments</a> 
+          <a href="tests.html">Tests</a>
+          <a href="https://piazza.com" target="blank">Piazza</a>  
+          <a href="labs.html">Labs</a>  
+          <a href="resources.html">Resources</a>
+          <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-times"><img src="src/images/times.png" width: 45px height=25px></i>
+          </label>
+      </ul>
+    </div>
+
+		<div class="content">
+          <h3 class="subheading">Online Resources</h3>
+          <div class="info">
+            <section class="subsection">
+                <p>
+                  <span class="specialInfo">Course Website:</span>
+                  <a href="index.html" target="_blank">Click Here</a>
+                </p>
+                <p>
+                  Course information, lecture notes, tutorial material, important announcements, etc. will be posted on the course website. It is your responsibility to visit it frequently.
+                </p>
+            </section>
+            <section class="subsection">
+                <p>
+                  <span class="specialInfo">Beginner MySQL Tutorial:</span>
+                  <a href="https://code.tutsplus.com/articles/sql-for-beginners--net-8200" target="_blank">Click Here</a>
+                </p>
+            </section>
+            <section class="subsection">
+                <p>
+                  <span class="specialInfo">Email Communication:</span>
+                </p>
+                <p>
+                  Questions regarding the course material, assignments, midterm, etc. should be posed on the bulletin board. Questions about the assignment which you feel you cannot formulate without revealing your solution (should be very rare!), as well as questions and concerns regarding your personal matters should be directed to the instructor.
+                </p>
+            </section>
+            <section class="subsection">
+                <p>
+                  <span class="specialInfo">Discussion Board:</span>
+                  <a href="https://piazza.com/mail.utoronto.ca/winter2017/cscb20/home" target="_blank">Click Here</a>
+                </p>
+                <p>
+                  You are encouraged to use the bulletin board to discuss the course material, pose questions on the assignments, etc. The bulletin board will be monitored by the instructor and by your TAs. Please, be very careful not to reveal (parts of) your solution on the bulletin board.
+                </p>
+            </section>
+              </div>
+		</div>
+
+        <div class="content">
+          <h3 class="subheading">Software Documentation</h3>
+          <div class="info">
+            <section class="subtitle">
+                <p>
+                  <span class="specialInfo">Logging into Mathlab:</span>
+                </p>
+            </section>
+            <section class="subsection">
+                <p>
+                Mac OS comes with the application "terminal". Simple click on it to run. Login to mathlab by typing:
+                </p>
+                <p class="specialInfo">
+                ssh utorid@mathlab.utsc.utoronto.ca. Enter your password.
+                </p>
+            </section>
+            <section class="subsection">
+                <p>
+                  Windows - you will need a SSH client. PuTTY is a good free one. You can download and install here:
+                  <a class="specialInfo" href="https://www.putty.org/" target="_blank">Putty</a>
+                  . Use the same command as above to login to mathlab:
+                </p>
+                <p class="specialInfo">
+                ssh utorid@mathlab.utsc.utoronto.ca.
+                </p>
+            </section>
+          </div>
+        </div>
+        
+		<div class="footer">
+            <div class="footer-content">
+                <div class="footer-contentimage">
+                   <img src="images/uoft.png" class="footerimage" />
+                </div>
+                <div class="footer-contentfeedback">
+                    <h2>Anonymous Feedback</h2>
+                    <br>
+                    <form method="post">
+                        <textarea name="message" class="textbox" placeholder="Your Feedback..." rows="4" required></textarea>
+                        <br>
+                        <input type="submit" class="submit" value="SUBMIT">
+                         </input>
+                    <form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a class="specialInfo" href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science" target="_blank"> Faculty of Computer Science at UofT </a>| &copy;Designed by Omar Patel & Umar Khan
+            </div>
+		</div>
+	</div>
+</body>
+</html>

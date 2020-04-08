@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+
+.header {
+	height: 80px;
+	background-color: #1F5C8F;
+	padding: 0px 15px;
+	color: #fff;
+}
+
+.logo {
+	line-height: 80px;
+	float: left;
+
+}
+
+.menu{
+	float: right;
+	line-height: 80px;
+}
+
+.menu a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0px 6px;
+	transition: 0.4s;
+}
+
+.show-menu-btn,.hide-menu-btn{
+	transition: 0.4s;
+	font-size: 30px;
+	cursor: : pointer;
+	display: none;
+}
+.show-menu-btn {
+	float: right;
+}
+
+.show-menu-btn i{
+	line-height: 80px;
+}
+.menu a:hover,.show-menu-btn:hover,
+.hide-menu-btn:hover{
+	color: #2CB6D2;
+}
+
+#chk{
+	position: absolute;
+	visibility: hidden;
+	z-index: -1111;
+}
+
+@media screen and (max-width: 1000px) {
+	.show-menu-btn,.hide-menu-btn{
+		display: block;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #333;
+		right: -100%; 
+		top: 0; 
+		text-align: center;
+		padding: 80px 0;
+		line-height: normal; 
+		transition: 0.7s;
+	}
+	.menu a{
+		display: block;
+		padding: 20px;
+	}
+
+	.hide-menu-btn {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+	}
+
+	#chk:checked ~ .menu{
+		right: 0;
+	}
+}
+.content {
+	animation: fadeIn 0.4s;
+	width: 80%;
+	margin: 30px auto;
+	padding: 40px;
+	border-radius: 4px;
+	box-shadow: 10px 10px 5px grey;
+	background-color: #F6ECDD; 
+	max-width: 800px;
+	display: flex;
+}
+
+#date {
+	margin:center;
+	background-color: #F6ECDD ;
+	line-height: 60px;
+	height: 70px;
+	width: 150px;
+	border-radius:4px; 
+	text-align: center;
+	float: left;
+	padding-right: 20px;
+}
+
+
+#post {
+	width: 500px;
+	background-color: #F6ECDD ;
+	float: right;
+}
+
+#date ul{
+	list-style-type: none;
+
+}
+
+#date ul li{
+	padding: 10px;
+	float:normal;
+	
+}
+#footer {
+	float: bottom;
+	clear: both;
+}
+
+.calendar {
+
+	animation: fadeIn 0.4s;
+	width: 80%;
+	margin: 30px auto;
+	padding: 0px;
+	background-color: #C7CED4; 
+	max-width: 800px;
+	display: flex;
+}
+
+.Announcement {
+	animation: fadeIn 0.4s;
+	width: 80%;
+	margin: 30px auto;
+	padding: 0px;
+	background-color: #C7CED4; 
+	max-width: 800px;
+	display: flex;
+}
+
+
+
+hr {
+	border-top: 1px dashed;
+	max-width: 500px;
+	margin: auto;
+}
