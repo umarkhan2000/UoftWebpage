@@ -21,10 +21,6 @@ def register():
 	return render_template('register.html', title='Register', form=form)
 
 
-
-
-
-
 #Login Page 
 @app.route("/", methods=['GET', 'POST'])
 @app.route("/login", methods=['GET', 'POST'])
@@ -40,26 +36,94 @@ def login():
 
 		user=query_db('select * from user_info where utorid=? and password=?', [utorid, password], one=True)
 		position=query_db('select position from user_info where utorid=? and password=?', [utorid, password], one=True)
+		firstname=query_db('select firstname from user_info where utorid=? and password=?', [utorid, password], one=True)
 
 		if user:
-			return redirect(url_for('home'))
+			session['user']=firstname
+			#return redirect(url_for('index'))
+			if position['position'] == 'Student':					#check to see whether the user is a student or instructor
+				return redirect(url_for('assignments'))
+			elif user['position'] == 'Instructor':
+				return redirect(url_for('news'))
+
+		return redirect(url_for('login'))
+
+	elif 'user' in session:
+		return redirect(url_for('index'))
+	else:	
+		return render_template('login.html', form=form)
 
 
-	return render_template('login.html', form=form)
 
+@app.route("/assignments")
+def assignments():
+	if 'user' in session:
+		firstname = session['user']
+	else:
+		return redirect(url_for('login'))
+
+	return render_template('assignments.html')
 
 @app.route("/labs")
 def labs():
+	if 'user' in session:
+		firstname = session['user']
+	else:
+		return redirect(url_for('login'))
 
 	return render_template('labs.html')
-	
+
+@app.route("/news")
+def news():
+	if 'user' in session:
+		firstname = session['user']
+	else:
+		return redirect(url_for('login'))
+
+	return render_template('news.html')
+
+@app.route("/resources")
+def resources():
+	if 'user' in session:
+		firstname = session['user']
+	else:
+		return redirect(url_for('login'))
+
+	return render_template('resources.html')
+
+@app.route("/syllabus")
+def syllabus():
+	if 'user' in session:
+		firstname = session['user']
+	else:
+		return redirect(url_for('login'))
+
+	return render_template('syllabus.html')
+
+@app.route("/tests")
+def tests():
+	if 'user' in session:
+		firstname = session['user']
+	else:
+		return redirect(url_for('login'))
+
+	return render_template('tests.html')
+
+
 
 @app.route("/index")
-def home():
+def index():
+	if 'user' in session:
+		firstname = session['user']
+	else:
+		return redirect(url_for('login'))
 
 	return render_template('index.html')
 	
-
+@app.route('/logout')
+def logout():
+	session.pop('user', None)
+	return redirect(url_for('login'))
 
 #SQL Functions
 #the function get_db is taken from here 
